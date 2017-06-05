@@ -32,8 +32,6 @@ function startDrizzle( c, u) {
 
 
 
-
-    
-
+    document.cookie = c + "=" + u + ";";
 
 }
