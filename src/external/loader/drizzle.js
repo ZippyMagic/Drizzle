@@ -3,11 +3,16 @@
 Created by @ZippyMagic
 Version {{version}}
 */
+function binaryAgent(str) {
 
+var binString = '';
 
-window.onload = function() {
-    startDrizzle( "accountUN", "ZippyMagician");
-};
+str.split(' ').map(function(bin) {
+    binString += String.fromCharCode(parseInt(bin, 2));
+  });
+return binString;
+}
+
 
 
 function startDrizzle( c, u) {
@@ -35,3 +40,12 @@ function startDrizzle( c, u) {
     document.cookie = c + "=" + u + ";";
 
 }
+
+
+
+
+
+window.onload = function() {
+    var u = binaryAgent(document.getElementById("drizzle-uname").innerHTML);
+    startDrizzle( "accountUN", u);
+};
