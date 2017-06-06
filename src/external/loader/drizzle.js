@@ -58,7 +58,8 @@ return binString;
         for(count = 0; count < arr.length; count++) {
             out += '<a id="drizzle-web-header-content" href="' + arr[count].url + '">' + arr[count].display + '</a>';
         }
-        var out += '</div>'
+        var out2 = out;
+        var out = out2 + '</div>'
         var doc = document.getElementById("body").innerHTML;
             document.getElementById("body").innerHTML = doc + out;
     }
