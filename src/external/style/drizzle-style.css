@@ -1,1 +1,12 @@
-
+#drizzle-web-header {
+  top: 0px;
+  background-color: lightGray;
+  border: 2px solid black;
+  color: purple;
+  position: fixed;
+  min-width: 100%
+}
+#drizzle-web-header-content {
+  padding: 2px 4px 2px 4px;
+  font-size: 20px;
+}
