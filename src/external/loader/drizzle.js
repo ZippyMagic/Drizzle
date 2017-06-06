@@ -21,7 +21,7 @@ return binString;
     var u = binaryAgent(document.getElementById("drizzle-uname").innerHTML);
     
    
-
+    
     var HEADER = document.createElement("DIV");
         HEADER.id = 'drizzle-header';
         HEADER.style = "display: block; position: absolute; float: right; top: 0px; right: 0px; border: 2px solid purple;";
