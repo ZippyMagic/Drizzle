@@ -17,11 +17,12 @@ return binString;
 (function () {
 
 
-      
+    // Create Username Cookie
     var u = binaryAgent(document.getElementById("drizzle-uname").innerHTML);
+    document.cookie = "uName=" + u + ";";
+
     
-   
-    
+    //Begin Header Creation
     var HEADER = document.createElement("DIV");
         HEADER.id = 'drizzle-header';
         HEADER.style = "display: block; position: absolute; float: right; top: 0px; right: 0px; border: 2px solid purple;";
@@ -38,10 +39,6 @@ return binString;
         CREDIT_ELEMENT_LOGO.appendChild(CREDIT2);
         document.getElementById("drizzle-element").appendChild(CREDIT_ELEMENT_LOGO);
     
-    
-    
-    document.cookie = "uName=" + u + ";";
-
     
     
 })();
