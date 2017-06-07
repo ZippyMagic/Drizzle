@@ -9,7 +9,7 @@ It does this by loading code externally through javascript, decreasing lag and i
 ## How do I install this?
 To install Drizzle, first add
 ```
-<script src="src/minified/error.min.js"></script>
+<script src="https://raw.githubusercontent.com/ZippyMagic/Drizzle/master/src/minified/error.min.js"></script>
 <script src="https://raw.githubusercontent.com/ZippyMagic/Drizzle/master/src/external/loader/drizzle.min.js"></script>
 ```
 to your website. Then, add in the code, as shown in the example below:
