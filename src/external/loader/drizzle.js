@@ -17,10 +17,6 @@ return binString;
 (function () {
 
 
-    // Create Username Cookie
-    var u = binaryAgent(document.getElementById("drizzle-uname").innerHTML);
-    document.cookie = "uName=" + u + ";";
-
     
     // Begin Style loader
     var STYLE = document.createElement("LINK");
@@ -52,17 +48,5 @@ return binString;
         document.getElementById("drizzle-web-top-array").innerHTML
     ]
      
-    function createHeader(arr) {
-        var out = '<div id="drizzle-web-header">';
-        var count;
-        for(count = 0; count < arr.length; count++) {
-            out += '<a id="drizzle-web-header-content" href="' + arr[count].url + '">' + arr[count].display + '</a>';
-        }
-        var out2 = out;
-        var out = out2 + '</div>'
-        var doc = document.getElementById("body").innerHTML;
-            document.getElementById("body").innerHTML = doc + out;
-    }
-    
-    createHeader(WEB_JSON);
+
 })();
