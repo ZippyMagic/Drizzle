@@ -26,7 +26,7 @@ return binString;
     document.getElementById("body").appendChild(STYLE);
     
     
-    // Begin Header Creation
+    // Begin 'Powered by' Creation
     var HEADER = document.createElement("DIV");
         HEADER.id = 'drizzle-header';
         HEADER.style = "display: block; position: absolute; float: right; top: 0px; right: 0px; border: 2px solid purple;";
@@ -44,9 +44,20 @@ return binString;
         document.getElementById("drizzle-element").appendChild(CREDIT_ELEMENT_LOGO);
     
     // Begin Website
-    var WEB_JSON = [
-        document.getElementById("drizzle-web-top-array").innerHTML
-    ]
-     
+    var TOP_TEXT = document.getElementById("drizzle-input-top").innerHTML;
+    if(TOP_TEXT === "") {
+        var error = console.log("Error 400: 'drizzle-input-top' is not defined");
+        return error;
+    }
+    var TOP = document.createElement("DIV");
+        TOP.id = 'drizzle-web-top';
+        TOP.style = 'display:block; position: absolute; top: 0px; left: 0px; min-width: 100%; border: 2px solid purple; color: purple; background-color: lightPurple; text-align: center;';
+        document.body.appendChild(TOP);
+    var TOP_HTML = document.createElement("H1");
+    var TOP_HTML_TEXT = document.createTextNode(TOP_TEXT);    
+        TOP_HTML.id = 'drizzle-web-top-text';
+        TOP_HTML.appendChild(TOP_HTML_TEXT);
+        document.getElementById("drizzle-web-top").appendChild(TOP_HTML);
+        
 
 })();
