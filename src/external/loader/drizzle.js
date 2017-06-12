@@ -3,21 +3,11 @@
 Created by @ZippyMagic
 Version {{version}}
 */
-function binaryAgent(str) {
-
-var binString = '';
-
-str.split(' ').map(function(bin) {
-    binString += String.fromCharCode(parseInt(bin, 2));
-  });
-return binString;
-}
 
 
 (function () {
 
 
-    
     // Begin Style loader
     var STYLE = document.createElement("LINK");
         STYLE.rel = 'stylesheet';
@@ -25,6 +15,11 @@ return binString;
         STYLE.href = 'drizzle/drizzle-style.min.css'
     document.getElementById("body").appendChild(STYLE);
     
+    // Begin function 'checkDrizzle()' creation
+    var SCRIPT = document.createElement("SCRIPT");
+    var SCRIPT_TEXT = document.createTextNode("function checkDrizzle() { alert('Drizzle is successfully installed. Is it not working properly?'); }");
+        SCRIPT.appendChild(SCRIPT_TEXT);
+        document.body.appendChild(SCRIPT);
     
     // Begin 'Powered by' Creation
     var HEADER = document.createElement("DIV");
