@@ -45,4 +45,4 @@ to your website. Then, add in the code, as shown in the example below:
 </noscript>
 <div id="body"></div>
 ```
-This will create a header with the word 'Home'. To see if Drizzle is working properly, type 'javascript:checkDrizzle();' in the bar.
+This will create a header with the word 'Home'. To see if Drizzle is working properly, type `javascript:checkDrizzle();` in the bar.
