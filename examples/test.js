@@ -3,7 +3,6 @@ Created by @ZippyMagic
 Version {{version}}
 */
 
-
 (function () {
 
 
