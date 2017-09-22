@@ -9,11 +9,6 @@ Version {{version}}
 
 
     
-    // Begin function 'checkDrizzle()' creation
-    var SCRIPT = document.createElement("SCRIPT");
-    var SCRIPT_TEXT = document.createTextNode("function checkDrizzle() { alert('Drizzle is successfully installed. Is it not working properly?'); }");
-        SCRIPT.appendChild(SCRIPT_TEXT);
-        document.body.appendChild(SCRIPT);
     
     // Begin 'Powered by' Creation
     var HEADER = document.createElement("DIV");
@@ -32,20 +27,6 @@ Version {{version}}
         CREDIT_ELEMENT_LOGO.appendChild(CREDIT2);
         document.getElementById("drizzle-element").appendChild(CREDIT_ELEMENT_LOGO);
     
-    // Begin Website
-    var TOP_TEXT = document.getElementById("drizzle-input-top").innerHTML;
-    if(TOP_TEXT === "") {
-        console.log("Error 400: 'drizzle-input-top' is not defined");
-    }
-    var TOP = document.createElement("DIV");
-        TOP.id = 'drizzle-web-top';
-        TOP.style = 'display:block; position: absolute; top: 0px; left: 0px; min-width: 100%; border: 2px solid purple; color: purple; background-color: lightPurple; text-align: center;';
-        document.body.appendChild(TOP);
-    var TOP_HTML = document.createElement("H1");
-    var TOP_HTML_TEXT = document.createTextNode(TOP_TEXT);    
-        TOP_HTML.id = 'drizzle-web-top-text';
-        TOP_HTML.appendChild(TOP_HTML_TEXT);
-        document.getElementById("drizzle-web-top").appendChild(TOP_HTML);
         
 
 })();
