@@ -8,12 +8,6 @@ Version {{version}}
 (function () {
 
 
-    // Begin Style loader
-    var STYLE = document.createElement("LINK");
-        STYLE.rel = 'stylesheet';
-        STYLE.type = 'text/css';
-        STYLE.href = 'drizzle/drizzle-style.min.css'
-    document.getElementById("body").appendChild(STYLE);
     
     // Begin function 'checkDrizzle()' creation
     var SCRIPT = document.createElement("SCRIPT");
@@ -41,8 +35,7 @@ Version {{version}}
     // Begin Website
     var TOP_TEXT = document.getElementById("drizzle-input-top").innerHTML;
     if(TOP_TEXT === "") {
-        var error = console.log("Error 400: 'drizzle-input-top' is not defined");
-        return error;
+        console.log("Error 400: 'drizzle-input-top' is not defined");
     }
     var TOP = document.createElement("DIV");
         TOP.id = 'drizzle-web-top';
